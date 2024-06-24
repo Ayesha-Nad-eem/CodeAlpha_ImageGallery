@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="nav">
+       <span class="Icon"> <img src="https://p1.hiclipart.com/preview/704/340/64/ios-7-icons-updated-game-center-alt3-ios-gallery-icon-png-clipart.jpg" alt=""></span> <span class="Heading">Image Gallery</span>
+    </div>
+    <div class="folders-collection">
+        <div class="folder" data-folder="Nature">
+            <img src="https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg" alt="Nature">
+            <p>Nature</p>
+        </div>
+        <div class="folder" data-folder="Flowers">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiOsyCGDK9izldaewXgGbyJLFdgGIsrOTPYJQvZVZ13E08iY-e_wl35k4_yQDdlezEAkw&usqp=CAU" alt="Flowers">
+            <p>Flowers</p>
+        </div>
+        <div class="folder" data-folder="Moon">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/029/207/732/small_2x/romantic-and-scenic-panorama-with-full-moon-on-sea-to-night-ai-generated-photo.jpg" alt="Moon">
+            <p>Moon</p>
+        </div>
+        <div class="folder" data-folder="Art">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_9rv0HePMh7krV8pwn3r9ntNEE0O59XeHrA&s" alt="Art">
+            <p>Art</p>
+        </div>
+    </div>
+    <div class="gallery" id="gallery">
+    <!--Images will be dynamically inserted here-->
+    </div>
+    <div class="lightbox" id="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content">
+        <div class="caption-container"></div>
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
